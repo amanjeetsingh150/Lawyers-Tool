@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.developers.lawyerstool.CaseInfo">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Case Details"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/scrollView">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rr"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Case Title: "
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/caset"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/textView4"
+                android:layout_toEndOf="@+id/textView4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Case Name: "
+                android:id="@+id/textView5"
+                android:layout_marginLeft="12dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/casen"
+                android:layout_below="@+id/caset"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_toEndOf="@+id/textView5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petitioner: "
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/textView6"
+                android:layout_below="@+id/textView5" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/petit"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_toRightOf="@+id/textView6"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of advocate of Petitioner: "
+                android:id="@+id/textView7"
+                android:layout_below="@+id/textView6"
+                android:layout_marginLeft="12dp"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/adpet"
+                android:layout_alignTop="@+id/textView7"
+                android:layout_toRightOf="@+id/textView7"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact of Advocate of Petitioner: "
+                android:id="@+id/textView9"
+                android:layout_below="@+id/textView7"
+                android:textSize="15dp"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/conadpet"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_below="@+id/adpet"
+                android:layout_toRightOf="@+id/textView9"
+                android:layout_toEndOf="@+id/textView9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email of advocate of Petitioner: "
+                android:id="@+id/textView10"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@+id/textView9"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/textView11"
+                android:layout_below="@+id/textView9"
+                android:layout_toRightOf="@+id/textView10"
+                android:layout_toEndOf="@+id/textView10" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Respondent: "
+                android:id="@+id/textView12"
+                android:layout_below="@+id/textView10"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView13"
+                android:textColor="#000"
+                android:layout_above="@+id/textView14"
+                android:layout_toRightOf="@+id/textView20"
+                android:layout_toEndOf="@+id/textView20" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of advocate of Respondent: "
+                android:id="@+id/textView14"
+                android:layout_below="@+id/textView12"
+                android:layout_marginLeft="12dp"
+                android:textSize="15dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/textView15"
+                android:layout_above="@+id/textView17"
+                android:layout_toRightOf="@+id/textView11"
+                android:layout_toEndOf="@+id/textView11" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact of advocate of Respondent: "
+                android:id="@+id/textView16"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:layout_below="@+id/textView14"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/textView17"
+                android:layout_alignTop="@+id/textView16"
+                android:layout_toRightOf="@+id/textView16"
+                android:layout_toEndOf="@+id/textView16" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email of advocate of Respondent: "
+                android:id="@+id/textView18"
+                android:layout_below="@+id/textView16"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColor="#000"
+                android:id="@+id/textView19"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView17"
+                android:layout_toRightOf="@+id/textView18"
+                android:layout_toEndOf="@+id/textView18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Filing: "
+                android:id="@+id/textView20"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView18"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/textView21"
+                android:layout_alignTop="@+id/textView20"
+                android:layout_toRightOf="@+id/textView20"
+                android:layout_toEndOf="@+id/textView20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration number: "
+                android:id="@+id/textView8"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView20"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView22"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView21"
+                android:layout_toRightOf="@+id/textView8"
+                android:layout_toEndOf="@+id/textView8" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Incourt/arbitratorrs: "
+                android:id="@+id/textView23"
+                android:layout_below="@+id/textView8"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/textView24"
+                android:layout_above="@+id/textView25"
+                android:layout_toRightOf="@+id/textView23"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limitation Date: "
+                android:id="@+id/textView25"
+                android:layout_below="@+id/textView23"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView26"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_alignBottom="@+id/textView25"
+                android:layout_toRightOf="@+id/textView25"
+                 />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Is Evidence to be Led: "
+                android:id="@+id/textView27"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@+id/textView25"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/textView28"
+                android:layout_alignTop="@+id/textView27"
+                android:layout_toRightOf="@+id/textView27"
+                android:layout_toEndOf="@+id/textView27" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Evidence Via: "
+                android:id="@+id/textView29"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView27"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/textView30"
+                android:layout_below="@+id/textView27"
+                android:layout_alignLeft="@+id/textView22"
+                android:layout_alignStart="@+id/textView22" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cross Examination Required: "
+                android:layout_marginLeft="12dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_below="@+id/textView29"
+                android:id="@+id/textView31"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name of Witnesses: "
+                android:id="@+id/textView32"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView31"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/textView33"
+                android:layout_above="@+id/textView32"
+                android:layout_toRightOf="@+id/textView31"
+                 />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Cross Examination: "
+                android:textSize="15dp"
+                android:id="@+id/textView34"
+                android:layout_below="@+id/textView32"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView35"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_above="@+id/textView36"
+                android:layout_toRightOf="@+id/textView32"
+                android:layout_toEndOf="@+id/textView32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/textView36"
+                android:layout_alignBottom="@+id/textView34"
+                android:layout_toRightOf="@+id/textView34"
+                android:layout_toEndOf="@+id/textView34" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Next hearing: "
+                android:id="@+id/textView37"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@+id/textView34"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Business on next hearing: "
+                android:id="@+id/textView38"
+                android:textColor="#000"
+                android:layout_below="@+id/textView37"
+                android:layout_marginLeft="12dp"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action required by client: "
+                android:id="@+id/textView39"
+                android:layout_below="@+id/textView38"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"
+                android:textSize="15dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action required by Lawyer: "
+                android:id="@+id/textView40"
+                android:layout_below="@+id/textView39"
+                android:layout_marginLeft="12dp"
+                android:textColor="#000"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Action by opposition: "
+                android:id="@+id/textView41"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@+id/textView40"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView42"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:layout_below="@+id/textView34"
+                android:layout_toLeftOf="@+id/adpet"
+                android:layout_toStartOf="@+id/adpet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView43"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_above="@+id/textView39"
+                android:layout_toRightOf="@+id/textView38"
+                android:layout_toEndOf="@+id/textView38" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:id="@+id/textView44"
+                android:layout_below="@+id/textView43"
+                android:layout_toRightOf="@+id/textView34"
+                android:layout_toEndOf="@+id/textView34" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textColor="#000"
+                android:id="@+id/textView45"
+                android:layout_below="@+id/textView39"
+                android:layout_toRightOf="@+id/textView40"
+                android:layout_toEndOf="@+id/textView40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:id="@+id/textView46"
+                android:layout_above="@+id/textView48"
+                android:layout_alignLeft="@+id/textView45"
+                android:layout_alignStart="@+id/textView45" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Relevant Sections: "
+                android:id="@+id/textView48"
+                android:layout_marginLeft="15dp"
+                android:textSize="15dp"
+                android:textColor="#000"
+                android:layout_below="@+id/textView41"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView49"
+                android:textColor="#000"
+                android:layout_alignTop="@+id/textView48"
+                android:layout_toRightOf="@+id/textView21"
+                android:layout_toEndOf="@+id/textView21" />
+        </RelativeLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+</RelativeLayout>
